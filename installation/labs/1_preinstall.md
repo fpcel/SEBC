@@ -56,7 +56,7 @@ Reserved blocks gid:      0 (group root)
        valid_lft forever preferred_lft forever
 ```
 5 - List forward and reverse host lookups using getent or nslookup
--- Reverse Lookup:
+- Reverse Lookup:
 ```
 [root@ip-172-31-47-47 ~]# nslookup 172.31.47.47
 Server:         172.31.0.2
@@ -68,7 +68,7 @@ Non-authoritative answer:
 Authoritative answers can be found from:
 
 ```
--- Lookup
+- Lookup
 ```
 [root@ip-172-31-47-47 ~]# nslookup ip-172-31-47-47.eu-west-1.compute.internal
 Server:         172.31.0.2
