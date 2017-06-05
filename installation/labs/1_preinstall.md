@@ -40,3 +40,41 @@ Reserved blocks uid:      0 (user root)
 Reserved blocks gid:      0 (group root)
 ```
 4 - Disable transparent hugepage support
+
+5 - List your network interface configuration
+```
+[root@ip-172-31-47-47 ~]# ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 16436 qdisc noqueue state UNKNOWN
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9001 qdisc pfifo_fast state UP qlen 1000
+    link/ether 0a:8e:e3:83:bc:44 brd ff:ff:ff:ff:ff:ff
+    inet 172.31.47.47/20 brd 172.31.47.255 scope global eth0
+    inet6 fe80::88e:e3ff:fe83:bc44/64 scope link
+       valid_lft forever preferred_lft forever
+```
+5 - List forward and reverse host lookups using getent or nslookup
+-- Reverse Lookup:
+```
+[root@ip-172-31-47-47 ~]# nslookup 172.31.47.47
+Server:         172.31.0.2
+Address:        172.31.0.2#53
+
+Non-authoritative answer:
+47.47.31.172.in-addr.arpa       name = ip-172-31-47-47.eu-west-1.compute.internal.
+
+Authoritative answers can be found from:
+
+```
+-- Lookup
+```
+[root@ip-172-31-47-47 ~]# nslookup ip-172-31-47-47.eu-west-1.compute.internal
+Server:         172.31.0.2
+Address:        172.31.0.2#53
+
+Non-authoritative answer:
+Name:   ip-172-31-47-47.eu-west-1.compute.internal
+Address: 172.31.47.47
+```
