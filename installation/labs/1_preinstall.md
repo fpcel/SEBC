@@ -40,7 +40,16 @@ Reserved blocks uid:      0 (user root)
 Reserved blocks gid:      0 (group root)
 ```
 4 - Disable transparent hugepage support
-
+- Transparent huges pages not found:
+- Nevertheless, appended the following lines to /etc/rc.local
+```
+if test -f /sys/kernel/mm/transparent_hugepage/enabled; then
+   echo never > /sys/kernel/mm/transparent_hugepage/enabled
+fi
+if test -f /sys/kernel/mm/transparent_hugepage/defrag; then
+   echo never > /sys/kernel/mm/transparent_hugepage/defrag
+fi
+```
 5 - List your network interface configuration
 ```
 [root@ip-172-31-47-47 ~]# ip addr
@@ -55,7 +64,7 @@ Reserved blocks gid:      0 (group root)
     inet6 fe80::88e:e3ff:fe83:bc44/64 scope link
        valid_lft forever preferred_lft forever
 ```
-5 - List forward and reverse host lookups using getent or nslookup
+6 - List forward and reverse host lookups using getent or nslookup
 - Reverse Lookup:
 ```
 [root@ip-172-31-47-47 ~]# nslookup 172.31.47.47
