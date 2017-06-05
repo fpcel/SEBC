@@ -78,3 +78,17 @@ Non-authoritative answer:
 Name:   ip-172-31-47-47.eu-west-1.compute.internal
 Address: 172.31.47.47
 ```
+7 - Show the nscd service is running
+```
+[root@ip-172-31-47-47 ~]# service nscd start
+Starting nscd:                                             [  OK  ]
+[root@ip-172-31-47-47 ~]# service nscd status
+nscd (pid 1578) is running...
+```
+8 - Show the ntpd service is running
+```
+[root@ip-172-31-47-47 ~]# service ntpd start
+Starting ntpd:                                             [  OK  ]
+[root@ip-172-31-47-47 ~]# service ntpd status
+ntpd (pid  1670) is running...
+```
