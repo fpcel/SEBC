@@ -51,3 +51,6 @@ repo settings:
 
 If you miss these steps, we'll open an Issue on your repo asking you to finish this work.
 We won't review what you submit for labs until you resolve this.
+
+
+(test)
