@@ -12,7 +12,7 @@ IPv4 Public IP: 54.171.10.243
 Private DNS: ip-172-31-40-66.eu-west-1.compute.internal
 Private IPs: 172.31.40.66
 ```
-Machine 3:
+Machine 3 (CM Server):
 ```
 Public DNS (IPv4): ec2-54-171-135-244.eu-west-1.compute.amazonaws.com
 IPv4 Public IP: 54.171.135.244
