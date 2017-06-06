@@ -19,8 +19,10 @@ Created snapshot /precious/.snapshot/sebc-hdfs-test
 rm: Failed to move to trash: hdfs://ip-172-31-34-16.eu-west-1.compute.internal:8020/precious: The directory /precious cannot be deleted since /precious is snapshottable and already has snapshots
 ```
 - Delete the ZIP file
+```
 [root@ip-172-31-44-17 ~]# sudo -u hdfs hdfs dfs -rm -r /precious/SEBC-master.zip
 17/06/06 15:19:37 INFO fs.TrashPolicyDefault: Moved: 'hdfs://ip-172-31-34-16.eu-west-1.compute.internal:8020/precious/SEBC-master.zip' to trash at: hdfs://ip-172-31-34-16.eu-west-1.compute.internal:8020/user/hdfs/.Trash/Current/precious/SEBC-master.zip
+```
 - Restore the deleted file
 ```
 [root@ip-172-31-44-17 ~]# sudo -u hdfs hdfs dfs -ls -R /precious/.snapshot/
