@@ -12,6 +12,8 @@ Valid starting     Expires            Service principal
         renew until 06/14/17 23:16:12
 ```
 ```
+[root@ip-172-31-44-17 ~]# beeline
+Beeline version 1.1.0-cdh5.8.3 by Apache Hive
 beeline> !connect jdbc:hive2://ip-172-31-44-17.eu-west-1.compute.internal:10000/default;principal=hive/ip-172-31-44-17.eu-west-1.compute.internal@FPCEL.COM
 Connecting to jdbc:hive2://ip-172-31-44-17.eu-west-1.compute.internal:10000/default;principal=hive/ip-172-31-44-17.eu-west-1.compute.internal@FPCEL.COM
 Enter username for jdbc:hive2://ip-172-31-44-17.eu-west-1.compute.internal:10000/default;principal=hive/ip-172-31-44-17.eu-west-1.compute.internal@FPCEL.COM: fpcel
