@@ -1,11 +1,11 @@
 - Report the latest available version of the API
 ```
-[root@ip-172-31-44-17 cloudera-scm-server]# curl -u fpcel:FPCEL#ClouderaSEB# "http://ec2-54-154-64-92.eu-west-1.compute.amazonaws.com:7180/api/version"
+[root@ip-172-31-44-17 cloudera-scm-server]# curl -u yyyyy:zzzzz "http://ec2-54-154-64-92.eu-west-1.compute.amazonaws.com:7180/api/version"
 v14
 ```
 - Report the CM version
 ```
-[root@ip-172-31-44-17 cloudera-scm-server]# curl -u fpcel:FPCEL#ClouderaSEB# "http://ec2-54-154-64-92.eu-west-1.compute.amazonaws.com:7180/api/v12/cm/version"
+[root@ip-172-31-44-17 cloudera-scm-server]# curl -u yyyyy:zzzzz "http://ec2-54-154-64-92.eu-west-1.compute.amazonaws.com:7180/api/v12/cm/version"
 {
   "version" : "5.9.2",
   "buildUser" : "jenkins",
@@ -16,7 +16,7 @@ v14
 ```
 - List all CM users
 ```
-[root@ip-172-31-44-17 cloudera-scm-server]# curl -u fpcel:FPCEL#ClouderaSEB# "http://ec2-54-154-64-92.eu-west-1.compute.amazonaws.com:7180/api/v12/users"
+[root@ip-172-31-44-17 cloudera-scm-server]# curl -u yyyyy:zzzzz "http://ec2-54-154-64-92.eu-west-1.compute.amazonaws.com:7180/api/v12/users"
 {
   "items" : [ {
     "name" : "admin",
