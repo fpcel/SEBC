@@ -1,3 +1,4 @@
+```
 [General]
 # Hostname of the CM server.
 server_host=ip-172-31-44-17.eu-west-1.compute.internal
@@ -220,3 +221,4 @@ verify_cert_file=/opt/cloudera/security/pki/rootca.cert.pem
 #cloudera_oracle_connector_jar=/usr/share/java/oracle-connector-java.jar
 #By default, postgres jar is found dynamically in $MGMT_HOME/lib
 #cloudera_postgresql_jdbc_jar=
+```
