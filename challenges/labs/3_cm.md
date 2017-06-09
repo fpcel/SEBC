@@ -12,7 +12,7 @@ drwxr-xr-x   - theresa conservative          0 2017-06-09 09:48 /user/theresa
 ```
 - The output from the CM API call ../api/v14/hosts
 ```
-[root@ip-172-31-24-220 ~]# curl -u admin:XXXXXXX 'ec2-54-229-201-172.eu-west-1.compute.amazonaws.com:7180/api/v14/hosts'
+[root@ip-172-31-24-220 ~]# curl -u admin:YYYYYYYY 'ec2-54-229-201-172.eu-west-1.compute.amazonaws.com:7180/api/v14/hosts'
 {
   "items" : [ {
     "hostId" : "eb2f4b57-f18d-4f2d-ae3e-8b1c5940b10c",
