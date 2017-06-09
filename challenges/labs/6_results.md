@@ -5,11 +5,6 @@ Used Code:
     CREATE ROLE politican1;
 	GRANT ALL ON DATABASE default TO ROLE politican1;
 	GRANT ROLE politican1 TO GROUP conservative;
-	
-	CREATE ROLE politican2;
-	GRANT SELECT ON default.sample_07 TO ROLE politican2;
-	GRANT SELECT ON default.sample_08 TO ROLE politican2;
-	GRANT ROLE politican2 TO GROUP labour;
 ```
 ```
 0: jdbc:hive2://ip-172-31-16-137.eu-west-1.co> show tables;
